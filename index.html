@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>* - yCat</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    </head>
+    <body>
+        <div id="intro-wrap">
+            <p>Pet this cat to get started!</p>
+            <div id="intro-cat" onclick="document.getElementById('intro-wrap').classList.add('intro-bye-bye'); document.getElementById('intro-wrap').style = 'animation: intro-byebye 2s linear 2s 1 forwards;'; //document.getElementById('bg-music').play;"></div>
+        </div>
+        <div id="banner">
+            <div id="ycat">yCat</div>
+            <div id="s-ycat">yCat</div>
+            <div id="info"><br><br><br><br>
+                <span id="dc-status"><img src="https://img.icons8.com/b3b3b3/16/circled.png"> Offline...</span>
+                <br>
+                <img src="https://img.icons8.com/FFFFFF/16/monitor.png" id="dc-activity-placeholder"><img src="" id="dc-activity-pic"><span id="dc-activity">Nothing...</span>
+                <br>
+                <img src="https://img.icons8.com/FFFFFF/16/music.png" id="dc-song-placeholder"><img src="" id="dc-song-pic"><span id="dc-song">Nothing...</span>
+                <button onclick="fetchDc()" id="dc-refresh"><img src="https://img.icons8.com/FFFFFF/16/recurring-appointment.png"></button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
